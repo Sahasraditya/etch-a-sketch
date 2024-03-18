@@ -12,6 +12,19 @@ function makeGrid(r,c){
         container.appendChild(newRow)    
 
     }
+
+    const gridElement = document.querySelectorAll("#container div div")
+    console.log(gridElement)
+
+    gridElement.forEach((cell) => {
+        cell.addEventListener("mouseover", () => {
+            cell.style.background = "red"
+        })
+    }) 
 }
 
 makeGrid(16,16);
+
+// make hover function
+
+
