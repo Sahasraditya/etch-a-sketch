@@ -6,28 +6,30 @@
 #container div{
     display: flex;
     justify-content: left;
+    width: 960px;
+    max-height: 100vh;
 }
 
 #container div div{
-    width: 40px;
-    height: 40px;
-    border:3px solid black;
+    width: 20px;
+    height: 20px;
+    border:1px solid black;
     background-color: lightblue;
 }
 
 .input{
+    display: flex;
     padding: 10px;
     margin:10px;
+    gap:10px;
 }
 
 .game{
     display: flex;  
     flex-direction: column;
+    gap:0px;
 }
 
-/* #container div div:hover{
-    background-color: red;
-} */
 
 .header {
     height: 72px;
@@ -42,8 +44,7 @@
     width: 300px;
     background: royalblue;
     box-sizing: border-box;
-    flex-shrink: 0;
-    height: 100vh;
+    min-height: 90vh;
   }
 
 .content{
@@ -72,4 +73,12 @@ body{
     color: black;
     font-size: 30px;
     text-align: center;
+}
+
+.footer{
+    background-color: #1f2937;
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: center;
+    color: #F9FAF8;
 }
