@@ -1,10 +1,11 @@
 #container{
     justify-content: center;
+    padding:25px;
 }
 
 #container div{
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 #container div div{
@@ -14,6 +15,61 @@
     background-color: lightblue;
 }
 
+.input{
+    padding: 10px;
+    margin:10px;
+}
+
+.game{
+    display: flex;  
+    flex-direction: column;
+}
+
 /* #container div div:hover{
     background-color: red;
 } */
+
+.header {
+    height: 72px;
+    background: darkmagenta;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+  }
+
+.sidebar {
+    width: 300px;
+    background: royalblue;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 100vh;
+  }
+
+.content{
+    display: flex;
+    flex:1;
+  }
+
+li{
+    list-style: none;
+    font-size: 24px;
+    color: white;
+    padding: 16px;
+  }
+
+li a{
+    text-decoration: none;
+    color: white;
+  }
+
+body{
+    display:flex;
+    flex-direction: column;
+  }
+
+.sidebar h3{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
