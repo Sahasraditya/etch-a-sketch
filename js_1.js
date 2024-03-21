@@ -18,8 +18,11 @@ function makeGrid(r,c){
     //console.log(gridElement)
     //gridElement.background = pickGridColor.value;
     gridElement.forEach((cell) => {
+
         cell.addEventListener("mouseover", () => {
-            cell.style.background = pickBrushColor.value
+            cell.style.background = pickBrushColor.value;
+            cell.style.opacity ++;
+            
         })
     }) 
 }
